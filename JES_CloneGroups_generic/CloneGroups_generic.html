@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Clone User Groups from one user to another</title>
+<link rel="stylesheet" href="/SASJobExecution/theme">
+</head>
+
+<body role="main" class="jobexec_body">
+
+<form class="jobexec_form" action="/SASJobExecution/" target="_tab">
+<input type="hidden" name="_program"     value="$PROGRAM$"/>
+<input type="hidden" name="_action"      value="wait,execute"/>
+<input type="hidden" name="_output_type" value="html"/>
+<div class="jobexec_sample_header">SAS<sup>&#174;</sup> Job Execution</div>
+<body>
+<h1 class="jobexec_sample_name">Clone groups from one user to another</h1>
+<p>
+<br/>
+
+<label for="curruser">Specify the email address you wish to copy the groups from: </label>
+<input type="text" name="curruser" id="curruser" value="sample@sas.com" required class="jobexec_sample_input_text"/>
+
+<br/> <br/>
+
+<label for="targetuser">Specify the email address you wish to copy the groups to: </label>
+<input type="text" name="targetuser" id="targetuser" value="sample@sas.com" required class="jobexec_sample_input_text"/>
+<br/>
+<br/>
+
+<hr/>
+
+<input type="submit" value="Run copy" class="jobexec_sample_input_submit"/>
+<input type="checkbox" name="_debug" id="_debug" value="log" class="jobexec_sample_input_checkbox"/><label for="_debug">Show SAS Log</label>
+
+</form>
+
+</body>
+
+</html>
